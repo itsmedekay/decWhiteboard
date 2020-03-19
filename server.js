@@ -22,7 +22,9 @@ io.on('connection', function (socket) {
     socket.on("mousemove",function(point){
         socket.broadcast.emit("onmousemove",point);
     })
-
+socket.on("size",function(size){
+socket.broadcast.emit("onsize",size);
+})
 });
 // app.get("/home",function(req,res){
 //     res.sendFile(path.join(__dirname,"home.html"));

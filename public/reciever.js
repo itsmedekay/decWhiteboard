@@ -22,3 +22,6 @@ socket.on("onmousemove", function (point) {
     ctx.stroke();
     undoStack.push(point);
 })
+socket.on("onsize", function (size) {
+    ctx.lineWidth = size;
+})

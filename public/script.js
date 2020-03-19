@@ -1,4 +1,5 @@
-const socket=io.connect("http://localhost:4000");
+// deploy => heroku
+const socket=io.connect("https://decwhiteboard.herokuapp.com/");
 const board = document.querySelector(".board");
 board.height = window.innerHeight;
 board.width = window.innerWidth;
